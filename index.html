@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulador FII</title>
+        <link rel="shortcut icon" href="draw/undraw03.png">
+        <meta name="author" content="Jackson Silva">
+        <meta name="description" content="Guia e Simulador de dividendos com fundo imobiliário">
+        <meta name="keywords" content="fundo imobiliário, fii, dividendo, dinheiro">
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        
+        <script src="js/scrollSmoot.js " defer></script>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        
+        <div id="principal">
+            <!--cabecalho-->
+            <header id="cabecalho-header">
+                <div class="rotulo-radius rotulo-radius-top" id="scrollHeader">
+                    <span class="icon-top-header icon-office"></span>
+                    <h2 class="subtitulo">Smart</h2>
+                    <h2 class="subtitulo">Simulador de </h2>
+                    <h2 class="subtitulo">Dividendos</h2>
+                </div>
+            </header>
+
+            
+            <!--menu-->
+            <nav class="menu-nav">
+                <ul id="ul-opcao-menu">
+
+                    <li class="opcao-menu">
+                        <a class="menu-a" id="ancora-home" href="#">
+                            <p class="icon-home iconMenu"></p>
+                            <p class="text-menu">home</p>
+                        </a>
+                    </li>
+
+                    <li class="opcao-menu">
+                        <a class="menu-a" id="ancora-calculadora" href="#">
+                            <p class="icon-calculator iconMenu"></p>
+                            <p class="text-menu">calculadora</p>
+                        </a>
+                    </li>
+
+                    <li class="opcao-menu" id="ancora-sobre">
+                        <a class="menu-a" href="#">
+                            <p class="icon-info iconMenu"></p>
+                            <p class="text-menu">sobre</p>
+                        </a>
+                    </li>
+
+                    <li class="opcao-menu">
+                        <a class="menu-a" href="#" id="ancora-rodape">
+                            <p class="icon-envelop iconMenu"></p>
+                            <p class="text-menu">contatos</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <article >
+                
+            </article>
+
+            <!--area do form-->
+            <main class="principal-main">
+
+                <!--area artigo-->
+                <div class="area-form">
+                    <article class="artigo artigo-top">
+                        <img src="img/predio1.jpg" alt="prédios" class="sub-article">
+                            <p class="icon-subtitulo icon-stats-dots"></p>
+                            <h1 class="titulo">Fundo Imobiliário - FII</h1>
+                            <p class="paragrafo">
+                                Ao montar uma carteira de bons fundos imobiliários, você garante dividendos, 
+                                que investindo há longo prazo com discíplina e estudo, no futuro será possível 
+                                conseguir a tão sonhada independencia financeira com os dividendos mensais, com 
+                                aportes mensais e reinvestindo os dividendos.
+                            </p>
+                            <p class="paragrafo">
+                                Abaixo uma calculadora de dividendos, para simular o quanto é necessário ter investido em um 
+                                determinado ativo de fundo imobiliário para obter um determinado valor desejado:
+
+                            </p>
+                        
+                        <div class="cartoon-top"></div>
+                    </article>
+
+                    <!--form-->
+                    <div  class="form" id="calculadoraScroll">
+                        
+                        <fieldset class="field field-input">
+                            <legend class="legenda"><span class='icon-office icon-legend'></span>Calcular Dividendos</legend>
+                      
+                            <div class="box-input">
+                                <label class="lbl lbl-rotulo" for="txtCodigoAtivo">Nome do Fundo: </label>
+                                <input type="text" class="txt" id="txtCodigoAtivo" placeholder="XPLG11">
+                                <label class="lbl" for="txtValorDividendo">(Informe o codigo do fundo)</label>
+                            </div>
+
+                            <div class="box-input">
+                                <label class="lbl lbl-rotulo" for="txtValorDividendo">Dividendo: </label>
+                                <input type="number" class="txt" id="txtValorDividendo" placeholder="R$: 0.69" autocomplete="off">
+                                <label class="lbl" for="txtValorDividendo">(Informe o valor do dividendo)</label>
+                            </div>
+
+                            <div class="box-input">
+                                <label class="lbl lbl-rotulo" for="txtValorDoAtivo">Cota R$: </label>
+                                <input type="number" class="txt" id="txtValorDoAtivo" placeholder="R$: 159.00" autocomplete="off">
+                                <label class="lbl" for="txtValorDoAtivo">(Informe o valor do ativo)</label>
+                            </div>
+
+                            <div class="box-input">
+                                <label class="lbl lbl-rotulo" for="txtValorReceber">Valor R$: </label>
+                                <input type="number" class="txt" id="txtValorReceber" placeholder="R$: 958.00">
+                                <label class="lbl" for="txtValorReceber">(Informe o valor que deseja receber em dividendo)</label>
+                            </div>
+
+                            <button class="btn" id="btnConfirmar">Calcular</button>
+                            <button class="btn" id="btnCancelar">Cancelar</button>
+                        </fieldset>
+
+                        <fieldset class="field field-resultado">
+                            <legend class="legenda">Resultado Final:</legend>
+                            <p class="paragrafo paragrafo-resultado">
+                                Valor que você precisa ter investido para receber os dividendos abaixo:
+                            </p>
+
+                            <dl class="listaResultado-dl" id="scrollResultado">
+
+                                <dt class="listCabecalho-dt">
+                                    <span class="icon-resultado icon-office"></span>
+                                    <label class="lbl-resultado" id="lblCodigoFundo">XPLG11</label>
+                                </dt>
+                                <dd class="listaItem-dd">
+                                    <div class="group-dd">
+                                        <span for="lblTotalReceber" class=" icon-dd icon-glass2"></span>
+                                        <label class="lbl-resultado" id="lblTotalReceber">R$:0.00 </label>
+                                    </div>
+                                    <label class="lbl-resultado-info">Valor que deseja receber *</label>  
+                                </dd>
+
+                                <dt class="listCabecalho-dt">
+                                    <span class="icon-resultado icon-coin-dollar"></span>
+                                    <label class="lbl-resultado">Total investir:</label>
+                                </dt>
+                                <dd class="listaItem-dd">
+                                    <div class="group-dd">
+                                        <span class="icon icon-dd icon-accessibility"></span>
+                                        <label class="lbl-resultado" id="lblTotalInvestir">R$:0.00</label>
+                                    </div>
+                                    <label class="lbl-resultado-info">Valor total investido *</label>  
+                                </dd>
+                            </dl>
+                        </fieldset>
+
+
+                    </div><!--FORM-->
+        
+                </div><!--AREA FORM-->
+
+                
+                
+                <h3 class="rotulo">Sobre:</h3>
+                <section class="section-artigos" id="scrollSobre">
+                    
+                    <article class="artigo">
+                        
+                            <p class="icon-artigo icon-stats-dots"></p>
+
+                            <h3 class="subtitulo-artigo">FII - Fundo Imobiliário</h3>
+                            <p class="paragrafo">
+                                É possível viver de renda aplicando em fundos imobiliários, em vez de imóveis físicos, e com algumas vantagens. Desde que os brasileiros perceberam isso, o volume de novas carteiras emitidas cresce sem parar. Os fundos imobiliários se tornaram um investimento da moda, vistos como uma maneira mais simples e barata de aplicar no setor.
+                            </p>
+                        
+                        
+                    </article>
+
+                    <article class="artigo">
+                        
+                            <p class="icon-artigo icon-notification"></p>
+                            <h3 class="subtitulo-artigo">O que são fundos imobiliários?</h3>
+                            <p class="paragrafo">
+                                Vamos começar pelo começo. Um fundo imobiliário é uma espécie 
+                                de “condomínio” de investidores, que reúnem seus recursos para 
+                                que sejam aplicados em conjunto no mercado imobiliário. A dinâmica 
+                                mais tradicional é que o dinheiro seja usado na construção ou na 
+                                aquisição de imóveis, que depois sejam locados ou arrendados. 
+                                Os ganhos obtidos com essas operações são divididos entre os 
+                                participantes, na proporção em que cada um aplicou.
+                            </p>
+                        
+                    </article>
+
+                    <article class="artigo">
+                        
+                            <p class="icon-artigo icon-stats-bars"></p>
+                            <h3 class="subtitulo-artigo">Tipos de Fundo Imobiliário</h3>
+                            <p class="paragrafo">
+                                Não existe apenas um tipo de Fundo 
+                                Imobiliário no mercado. De acordo com 
+                                a estratégia que adotam, eles podem ser de diferentes tipos. Os principais são:
+
+                                <ul class="listaTipoFII">
+                                    <li>
+                                        <span class="distaque">Fundos de papel:</span> 
+                                        <span class="paragrafo">
+                                            são de títulos em renda fixa, ligados ao setor de imóveis. Por exemplo, 
+                                            Certificados de Recebíveis Imobiliários (CRI) ou Letras de Crédito Imobiliário (LCI);
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="distaque">Fundo de fundos:</span> 
+                                        <span class="paragrafo">
+                                            são chamados assim os FIIs que focam seus investimentos em imóveis físicos. Eles podem 
+                                            ser muito diversos como fundos que atuam na locação, na compra e venda ou na construção etc;
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <span class="distaque">Fundos de tijolos:</span> 
+                                        <span class="paragrafo">
+                                            FIIs que compõem seu portfólio com cotas de outros Fundos Imobiliários;
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+                            </p>
+                        
+                    </article>
+                </section>
+                    <div class="cartoon-top cartoon-2"></div>
+            </main>
+            
+
+             <footer class="rodape" id="scrollRodape">
+                <ul class="lista-icon-footer">
+                    <li>
+                        <a class="icon-footer" href="https://www.linkedin.com/in/jackson-silva-50641b184/">
+                            <span class="icon-footer icon-linkedin"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="icon-footer" href="https://github.com/cajui54">
+                            <span class="icon-footer icon-github"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="icon-footer" href="https://www.facebook.com/">
+                            <span class="icon-footer icon-facebook2"></span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-footer-bottom">Smart Dividendo</p>
+             </footer>
+         </div><!--PRINCIPAL-->
+         
+         
+    </body>
+</html>
